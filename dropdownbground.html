@@ -1,0 +1,73 @@
+<html ng-app>
+<head>
+
+<script src="http://code.angularjs.org/1.2.6/angular.min.js"></script>
+<style>
+
+#red1{
+	background-color:red;
+}
+
+#green1{
+	   background-color:green;
+}
+
+#yellow1{
+
+	    background-color:yellow;
+}
+
+#magenta1{
+		background-color:magenta;
+}
+
+</style>
+</head>
+
+<body>
+<select ng-model="myModel">
+<option value="">Select
+<option value="Red">Red</option>
+<option value="Green">Green</option>
+<option value="Yellow">Yellow</option>
+<option value="Magenta">Magenta</option>
+</select>
+
+<div ng-switch="myModel">
+
+	<div ng-switch-when="Red" id="red1">
+        </BR></BR></BR></BR></BR></BR></BR>
+	<center><h3>Background colour changing using dropdownlist</h3></center>
+        </BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</div>
+
+	<div ng-switch-when="Green" id="green1">
+	</BR></BR></BR></BR></BR>
+	<Center><h2>Drop-Down List for Changing Background Color</h2></center>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>	
+	</div>
+	
+	<div ng-switch-when="Yellow" id="yellow1">
+        </BR></BR></BR></BR></BR></BR></BR></BR>
+        <center><h3>Background colour changing using dropdownlist</h3></center>
+        </BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</div>
+
+	<div ng-switch-when="Magenta" id="magenta1">
+        </BR></BR></BR></BR></BR></BR></BR></BR>
+        <center><h3>Background colour changing using dropdownlist</h3></center>
+        </BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR></BR>
+	</div>
+
+
+</div>
+</body>
+</html>
+
+

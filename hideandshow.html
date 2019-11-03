@@ -1,0 +1,61 @@
+<!Doctype html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$("#hide").click(function(){
+			$("p").hide();
+		});
+		$("#show").click(function(){
+			$("p").show();
+		});
+	});
+	
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("p").append("<b>Append the text.</b>");
+		});
+		$("#btn2").click(function(){
+			$("ol").append("<li>Append item</li>");
+		});
+	});
+	
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#ol1").remove();
+		});
+	});
+			
+</script>
+</head>
+<body>
+	<p>If you click on "Hide" button,I will disappear.</p>
+	<button id="hide">Hide</button>
+	<button id="show">Show</button>
+	
+	<p>This is paragraph.</p>
+	<p>This is another paragraph.</p>
+	
+	<ol>
+		<li> #item 1</li>
+		<li> #item 2</li>
+		<li> #item 3</li>
+		<li> #item 4</li>
+	</ol>
+	
+	<button id="btn1">Append text</button>
+	<button id="btn2">Append item</button>
+	
+	<ol id="ol1">
+		<li> #item 1</li>
+		<li> #item 2</li>
+		<li> #item 3</li>
+		<li> #item 4</li>
+	</ol>
+	<button>Remove</button>
+		
+</body>
+</html>	
+	
